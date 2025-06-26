@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "oddevenQ2.C": "cpp"
+        "*.ejs": "html",
+        "oddevenQ2.C": "cpp",
+        "iostream": "cpp"
     }
 }
