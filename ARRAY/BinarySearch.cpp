@@ -30,3 +30,7 @@ int main() {
         cout << "Not found" << endl;
     return 0;
 }
+
+
+// TIME COMPLEXITY: O(log n)
+// SPACE COMPLEXITY: O(1)
