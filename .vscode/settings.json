@@ -4,5 +4,6 @@
         "oddevenQ2.C": "cpp",
         "iostream": "cpp"
     },
-    "C_Cpp.errorSquiggles": "disabled"
+    "C_Cpp.errorSquiggles": "disabled",
+    "github.copilot.nextEditSuggestions.enabled": false
 }
