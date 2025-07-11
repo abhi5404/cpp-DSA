@@ -29,3 +29,5 @@ int main() {
     maxProfit(prices, n);
     return 0;
 }
+
+// time complexity of this algorithm is O(n)
