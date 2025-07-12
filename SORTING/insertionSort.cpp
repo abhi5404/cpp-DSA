@@ -1,3 +1,4 @@
+
 #include<iostream>
 using namespace std;
 
@@ -8,24 +9,25 @@ void print(int arr[], int n) {
     cout << endl;
 }
 
-void bubbleSort(int arr[], int n) {
+void insertionSort(int arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-// for decending order, use < instead of >
-                swap(arr[j], arr[j + 1]);
-            }
+        int curr=arr[i];
+        int prev=i-1;
+        while (prev>=0 && arr[prev]>arr[prev+1])
+        {
+     swap(arr[prev],arr[prev+1]);
+     prev--;
         }
-    }
+        
+        arr[prev+1]=curr;
+            }
+        
     cout << "Sorted array: ";
     print(arr, n);
 }
 
 int main() {
     int arr[5] = {5, 4, 3, 2, 1};
-    bubbleSort(arr, 5);
+    insertionSort(arr, 5);
     return 0;
 }
-
-
-//time complexity: O(n^2)

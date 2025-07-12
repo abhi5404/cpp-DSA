@@ -5,5 +5,5 @@
         "iostream": "cpp"
     },
     "C_Cpp.errorSquiggles": "disabled",
-    "github.copilot.nextEditSuggestions.enabled": false
+    "github.copilot.nextEditSuggestions.enabled": true
 }
