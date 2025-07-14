@@ -8,14 +8,14 @@ int main() {
 
     int arr[n][m]; 
 
-    cout << "Enter elements:\n";
+    cout << "Enter elements:\n"; // Input elements of the 2D array
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cin >> arr[i][j];
         }
     }
 
-    cout << "Matrix:\n";
+    cout << "Matrix:\n";  // Display the 2D array
     for (int i = 0; i < n; i++) {
         for (int j = 0; j < m; j++) {
             cout << arr[i][j] << " ";
