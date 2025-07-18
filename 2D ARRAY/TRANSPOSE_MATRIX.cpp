@@ -44,3 +44,6 @@ int main() {
     transposeMatrix(mat, 4, 4);
     return 0;
 }
+
+
+// time complexity : O(n * m)
