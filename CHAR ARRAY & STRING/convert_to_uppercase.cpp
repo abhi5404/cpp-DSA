@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 void toUpper(char word[],int n){
     for (int i=0;i<n;i++){
@@ -16,5 +17,6 @@ void toUpper(char word[],int n){
 int main (){
     char word[]="ApPle";
     toUpper(word,strlen(word));
+    cout<<"Uppercase = "<<word<<endl;
     return 0;
 }
