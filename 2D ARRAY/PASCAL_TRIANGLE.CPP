@@ -31,3 +31,6 @@ int main() {
 
     return 0;
 }
+
+
+// This code generates Pascal's Triangle up to n rows and prints it.
