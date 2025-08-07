@@ -48,3 +48,6 @@ int main() {
 
     return 0;
 }
+
+//time complexity: O(n*m)
+//space complexity: O(1)
