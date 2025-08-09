@@ -39,3 +39,7 @@ int main() {
 
     return 0;
 }
+
+// This code finds all unique triplets in the array that sum to zero.
+//time complexity: O(n^2)
+//space complexity: O(1) as we are using only a few extra variables.
