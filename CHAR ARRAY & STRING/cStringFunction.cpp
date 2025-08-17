@@ -26,3 +26,15 @@ void concatenateStrings (char*a1, const char*a2) {
     }
     a1[i] = '\0'; // null-terminate the concatenated string
 }
+
+// compare strings
+int compareStrings (const char*a1, const char*a2) {
+    int i = 0;
+    while (a1[i] != '\0' && a2[i] != '\0') {
+        if (a1[i] != a2[i]) {
+            return a1[i] - a2[i];
+        }
+        i++;
+    }
+    return a1[i] - a2[i];
+}
