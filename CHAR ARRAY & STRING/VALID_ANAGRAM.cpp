@@ -31,5 +31,4 @@ int main() {
 
     return 0;
 }
-
-// time complexity 
+// time complexity is O(n log n) due to sorting
