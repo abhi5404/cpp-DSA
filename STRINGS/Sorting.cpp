@@ -11,3 +11,5 @@ int main (){
     sort(s.begin(), s.end());
     cout << s;
 }
+
+// sort-> Ascii values according to that it sorts the string
