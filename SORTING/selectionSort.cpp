@@ -24,4 +24,13 @@ int main (){
 }
 
 
-//time complexity: O(n^2)
+// algorithm for remembering this sort is given below :
+// begin : for i=0 to n-1(outer loop)
+// min_index=i
+// begin : for j=i+1 to n(inner loop)
+// if arr[j]<arr[min_index] then min_index=j
+// end inner loop
+// swap(arr[i],arr[min_index])
+// end outer loop
+
+// Time Complexity: O(n^2) in all cases (worst, average, best)
