@@ -1,32 +1,27 @@
 #include<iostream>
 using namespace std;
+int main (){
+    int arr[]={64,25,12,22,11};
+    int n= sizeof(arr)/sizeof(arr[0]);
+    for(int i=0;i<n-1;i++){  //outer loop (n-1 passes)
+        int min_index=i;
+         //inner loop (for traversing unsorted array)
 
-void print(int arr[], int n) {
-    for (int i = 0; i < n; i++) {
-        cout << arr[i] << " ";
-    }
-    cout << endl;
-}
-
-void selectionSort(int arr[], int n) {
-    for (int i = 0; i < n - 1; i++) {
-        int minIndex = i;
-        for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j;
+        for(int j=i+1;j<n;j++){  
+            if(arr[j]<arr[min_index]){
+                min_index=j;
             }
         }
-// for decending order, use < instead of >
-                swap(arr[i], arr[minIndex]);
-            }
-    cout << "Sorted array: ";
-    print(arr, n);
-}
+        //swap
+        swap(arr[i],arr[min_index]);
+    }
 
-int main() {
-    int arr[5] = {5, 4, 3, 2, 1};
-     selectionSort(arr, 5);
+    cout<<"Sorted array: \n";
+    for(int i=0;i<n;i++){
+        cout<<arr[i]<<" ";
+    }
     return 0;
 }
+
 
 //time complexity: O(n^2)
