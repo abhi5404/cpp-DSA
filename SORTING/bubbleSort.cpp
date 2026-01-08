@@ -29,3 +29,10 @@ int main() {
 
 
 //time complexity: O(n^2)
+
+// short algorithm for remembering this sort is given below :
+// begin : for i=0 to n-1(outer loop)
+// begin : for j=0 to n-i-1(inner loop)
+// if arr[j]>arr[j+1] then swap(arr[j],arr[j+1])
+// end inner loop
+// end outer loop
