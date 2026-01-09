@@ -22,3 +22,16 @@ int main(){
     }
     return 0;
 }
+
+// algorithm for remembering this sort is given below :
+// begin : for i=1 to n-1(outer loop)
+// curr=arr[i]
+// prev=i-1
+// begin : while prev>=0 and arr[prev]>curr(inner loop)
+// arr[prev+1]=arr[prev]
+// prev=prev-1
+// end inner loop
+// arr[prev+1]=curr
+// end outer loop
+
+// Time Complexity: O(n^2) in worst and average cases, O(n) in best case (when the array is already sorted)
