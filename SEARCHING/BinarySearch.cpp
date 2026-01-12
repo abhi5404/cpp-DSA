@@ -2,17 +2,25 @@
 
 #include <iostream>
 using namespace std;
+int arr[]={5, 7, 23, 32, 34, 62}; // sorted array
+int n= sizeof(arr)/sizeof(arr[0]);
 int lo=0;
 int hi=n-1;
-while(lo<=hi){
-    int mid=lo+(hi-lo)/2; // to avoid overflow
-    if(arr[mid]==key){
-        return mid; // key found at index mid
+int key=23;
+int main (){
+    while(lo<=hi){
+        int mid= lo+(hi-lo)/2; // to avoid overflow
+        if(arr[mid]==key){
+            cout<<"Key found at index "<<mid<<endl;
+            return 0;
+        }
+        else if(arr[mid]<key){
+            lo=mid+1;
+        }
+        else{
+            hi=mid-1;
+        }
     }
-    else if(arr[mid]<key){
-        lo=mid+1; // search in right half
-    }
-    else{
-        hi=mid-1; // search in left half
-    }
+    cout<<"Key not found"<<endl;
+    return 0;
 }
