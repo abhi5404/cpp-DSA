@@ -35,3 +35,5 @@ int main (){
     }
     cout<<"Smallest missing positive integer is "<<ans<<endl;
 }
+
+// time complexity: O(log n)
